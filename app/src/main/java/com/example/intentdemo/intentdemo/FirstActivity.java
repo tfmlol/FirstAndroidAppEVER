@@ -1,10 +1,13 @@
 package com.example.intentdemo.intentdemo;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import java.net.URI;
 
 public class FirstActivity extends AppCompatActivity {
     // Creates our empty activity, This is like our Main method for Android
@@ -36,6 +39,12 @@ public class FirstActivity extends AppCompatActivity {
 
     public void LoadXMLClick(View view){
         Intent i = new Intent(FirstActivity.this, SecondActivity.class);
+        startActivity(i);
+    }
+
+    public void LoadSite(View view){
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse("https://www.google.ca"));
         startActivity(i);
     }
 

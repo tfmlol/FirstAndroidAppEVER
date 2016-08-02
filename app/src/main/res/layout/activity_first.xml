@@ -39,4 +39,14 @@
         android:layout_centerHorizontal="true"
         android:onClick="LoadXMLClick"
         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Implicit Call"
+        android:id="@+id/btnImplicitCall"
+        android:layout_below="@+id/btnXML"
+        android:layout_centerHorizontal="true"
+        android:onClick="LoadSite"
+        />
 </RelativeLayout>
